@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="navbar">
       <strong>UTEQ Sensor Monitor</strong>
       <div>
-        <NavLink to="/sensor/sensor_001">Dashboard</NavLink>
+        <NavLink to="/sensor/sensor_2351049941">Dashboard</NavLink>
         <NavLink to="/ubicaciones">Ubicaciones</NavLink>
       </div>
     </nav>

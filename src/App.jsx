@@ -9,7 +9,7 @@ export default function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Navigate to="/sensor/sensor_001" replace />} />
+        <Route path="/" element={<Navigate to="/sensor/sensor_2351049941" replace />} />
         <Route path="/sensor/:sensorId" element={<Dashboard />} />
         <Route path="/ubicaciones" element={<Ubicaciones />} />
         <Route path="*" element={<Navigate to="/ubicaciones" replace />} />
