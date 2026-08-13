@@ -1,3 +1,5 @@
+<img width="1134" height="933" alt="image" src="https://github.com/user-attachments/assets/4d3f214f-5867-4441-a922-6ff71b952dfb" />
+
 # 📡 Sistema de Monitoreo de Sensores en Tiempo Real
 
 > **Asignatura:** Aplicaciones Telemáticas Basadas en la Web  
