@@ -1,19 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Dashboard from "./pages/Dashboard";
+import Ubicaciones from "./pages/Ubicaciones";
+import "./styles.css";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <section id="center">
-        <h1>hola</h1>
-      </section>
-    </>
-  )
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Navigate to="/sensor/sensor_001" replace />} />
+        <Route path="/sensor/:sensorId" element={<Dashboard />} />
+        <Route path="/ubicaciones" element={<Ubicaciones />} />
+        <Route path="*" element={<Navigate to="/ubicaciones" replace />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App
